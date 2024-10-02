@@ -12,28 +12,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div>
-        <form name="form">
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <label for= "user" required>Username</label>
-                <input type="text" id="user" name="user"><br><br>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <label for="email">Email</label> 
-                <input type="email" id="email" name="email"><br><br>
-            </div>
-            <div>
-                <i class="fa-solid fa-lock"></i>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password"><br><br>
-            </div>
-            <div>
-                <i class="fa-solid fa-lock"></i>
-                <label for="password confirmation">Repeat password</label> 
-                <input type="password" id="password confirmation" name="password confirmation"><br><br>
-            </div>
+    <div id="form">
+        <h1 id="heading">SignUp Form</h1><br>
+        <form name="form" action="signup.php" method="POST">
+            <i class="fa fa-user fa-lg"></i>
+            <input type="text" id="user" name="user" placeholder="Enter Username" required></br></br>
+            <i class="fa-solid fa-envelope fa-lg"></i>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required></br></br>
+            <i class="fa-solid fa-lock fa-lg"></i>
+            <input type="password" id="pass" name="pass" placeholder="Create Password" required></br></br>
+            <i class="fa-solid fa-lock fa-lg"></i>
+            <input type="password" id="cpass" name="cpass" placeholder="Re-enter Password" required></br></br>
+            <input type="submit" id="btn" value="SignUp" name = "submit"/>
         </form>
     </div>
   </body>
