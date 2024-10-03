@@ -21,3 +21,11 @@ input{
     border: 3px solid •#f6efef;
     padding: 5px;
 }
+
+#btn{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
